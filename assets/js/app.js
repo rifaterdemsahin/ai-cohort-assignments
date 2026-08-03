@@ -77,23 +77,29 @@
     updateScore();
   }
 
-  /* ---------- Glossary live search ---------- */
-  function initGlossarySearch() {
-    var input = document.querySelector(".glossary-search");
-    var terms = Array.prototype.slice.call(document.querySelectorAll(".glossary-term"));
-    if (!input || terms.length === 0) return;
+  /* ---------- Generic live search: filters `itemSelector` elements by text match ---------- */
+  function initLiveSearch(inputSelector, itemSelector) {
+    var input = document.querySelector(inputSelector);
+    var items = Array.prototype.slice.call(document.querySelectorAll(itemSelector));
+    if (!input || items.length === 0) return;
     input.addEventListener("input", function () {
       var q = input.value.trim().toLowerCase();
-      terms.forEach(function (term) {
-        var text = term.textContent.toLowerCase();
-        term.classList.toggle("hidden", q.length > 0 && text.indexOf(q) === -1);
+      var visibleCount = 0;
+      items.forEach(function (item) {
+        var text = item.textContent.toLowerCase();
+        var match = q.length === 0 || text.indexOf(q) !== -1;
+        item.classList.toggle("hidden", !match);
+        if (match) visibleCount++;
       });
+      var countEl = document.querySelector(inputSelector + "-count");
+      if (countEl) countEl.textContent = q.length === 0 ? "" : visibleCount + " match" + (visibleCount === 1 ? "" : "es");
     });
   }
 
   document.addEventListener("DOMContentLoaded", function () {
     initNav();
     initAssessment();
-    initGlossarySearch();
+    initLiveSearch(".glossary-search", ".glossary-term");
+    initLiveSearch(".proc-search", ".procedure");
   });
 })();

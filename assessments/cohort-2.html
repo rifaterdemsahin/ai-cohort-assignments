@@ -21,8 +21,48 @@
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
     <ul class="nav-links">
       <li><a href="../index.html">🏠 Home</a></li>
-      <li><a href="../cohorts/index.html">📁 Cohorts</a></li>
-      <li><a href="index.html" class="active">✅ Self-Assessment</a></li>
+      <li class="nav-dropdown">
+        <details>
+          <summary>📁 Cohorts</summary>
+          <ul class="dropdown-menu">
+            <li><a href="../cohorts/index.html">📚 All Cohorts</a></li>
+            <li><a href="../cohorts/cohort-1.docx">1️⃣ Cohort 1</a></li>
+            <li><a href="../cohorts/cohort-2.docx">2️⃣ Cohort 2</a></li>
+            <li><a href="../cohorts/cohort-3.docx">3️⃣ Cohort 3</a></li>
+            <li><a href="../cohorts/cohort-4.docx">4️⃣ Cohort 4</a></li>
+            <li><a href="../cohorts/cohort-5.docx">5️⃣ Cohort 5</a></li>
+            <li><a href="../cohorts/cohort-6.docx">6️⃣ Cohort 6</a></li>
+          </ul>
+        </details>
+      </li>
+      <li class="nav-dropdown">
+        <details>
+          <summary class="active">✅ Self-Assessment</summary>
+          <ul class="dropdown-menu">
+            <li><a href="../assessments/index.html">✅ All Checklists</a></li>
+            <li><a href="../assessments/cohort-1.html">1️⃣ Cohort 1</a></li>
+            <li><a href="../assessments/cohort-2.html">2️⃣ Cohort 2</a></li>
+            <li><a href="../assessments/cohort-3.html">3️⃣ Cohort 3</a></li>
+            <li><a href="../assessments/cohort-4.html">4️⃣ Cohort 4</a></li>
+            <li><a href="../assessments/cohort-5.html">5️⃣ Cohort 5</a></li>
+            <li><a href="../assessments/cohort-6.html">6️⃣ Cohort 6</a></li>
+          </ul>
+        </details>
+      </li>
+      <li class="nav-dropdown">
+        <details>
+          <summary>📋 Procedures</summary>
+          <ul class="dropdown-menu">
+            <li><a href="../procedures/index.html">📋 All Procedures</a></li>
+            <li><a href="../procedures/index.html#cohort-1">1️⃣ Cohort 1</a></li>
+            <li><a href="../procedures/index.html#cohort-2">2️⃣ Cohort 2</a></li>
+            <li><a href="../procedures/index.html#cohort-3">3️⃣ Cohort 3</a></li>
+            <li><a href="../procedures/index.html#cohort-4">4️⃣ Cohort 4</a></li>
+            <li><a href="../procedures/index.html#cohort-5">5️⃣ Cohort 5</a></li>
+            <li><a href="../procedures/index.html#cohort-6">6️⃣ Cohort 6</a></li>
+          </ul>
+        </details>
+      </li>
       <li><a href="../glossary/index.html">📖 Glossary</a></li>
       <li><a href="https://github.com/rifaterdemsahin/ai-cohort-assignments" target="_blank" rel="noopener">🐙 GitHub</a></li>
     </ul>
@@ -63,14 +103,17 @@
       <div class="check-item">
         <input type="checkbox" id="c2-s1-1">
         <label for="c2-s1-1"><span class="item-emoji">🚗</span>Can explain the difference between an agentic system and a simple prompt (autopilot analogy)</label>
+        <a class="proc-link" href="../procedures/index.html#c2-s1-1" title="Operational procedure">📋</a>
       </div>
       <div class="check-item">
         <input type="checkbox" id="c2-s1-2">
         <label for="c2-s1-2"><span class="item-emoji">🧭</span>Understand coordinator vs. sub-agent roles in an architecture</label>
+        <a class="proc-link" href="../procedures/index.html#c2-s1-2" title="Operational procedure">📋</a>
       </div>
       <div class="check-item">
         <input type="checkbox" id="c2-s1-3">
         <label for="c2-s1-3"><span class="item-emoji">🏙️</span>Reviewed an example of interconnected agents (e.g. a document/PDF-parsing pipeline)</label>
+        <a class="proc-link" href="../procedures/index.html#c2-s1-3" title="Operational procedure">📋</a>
       </div>
     </div>
 
@@ -80,18 +123,22 @@
       <div class="check-item">
         <input type="checkbox" id="c2-s2-1">
         <label for="c2-s2-1"><span class="item-emoji">📊</span>Tracked your own daily token usage across at least one AI tool</label>
+        <a class="proc-link" href="../procedures/index.html#c2-s2-1" title="Operational procedure">📋</a>
       </div>
       <div class="check-item">
         <input type="checkbox" id="c2-s2-2">
         <label for="c2-s2-2"><span class="item-emoji">💳</span>Understand the difference between subscription-based and API/pay-per-use pricing</label>
+        <a class="proc-link" href="../procedures/index.html#c2-s2-2" title="Operational procedure">📋</a>
       </div>
       <div class="check-item">
         <input type="checkbox" id="c2-s2-3">
         <label for="c2-s2-3"><span class="item-emoji">🧮</span>Know what a benchmark (SB) score is used for when comparing models</label>
+        <a class="proc-link" href="../procedures/index.html#c2-s2-3" title="Operational procedure">📋</a>
       </div>
       <div class="check-item">
         <input type="checkbox" id="c2-s2-4">
         <label for="c2-s2-4"><span class="item-emoji">🔒</span>Understand why some organizations run private/local models for data sovereignty</label>
+        <a class="proc-link" href="../procedures/index.html#c2-s2-4" title="Operational procedure">📋</a>
       </div>
     </div>
 
@@ -101,14 +148,17 @@
       <div class="check-item">
         <input type="checkbox" id="c2-s3-1">
         <label for="c2-s3-1"><span class="item-emoji">🍴</span>Forked or cloned a repository of example projects</label>
+        <a class="proc-link" href="../procedures/index.html#c2-s3-1" title="Operational procedure">📋</a>
       </div>
       <div class="check-item">
         <input type="checkbox" id="c2-s3-2">
         <label for="c2-s3-2"><span class="item-emoji">🖥️</span>Ran and modified at least one example locally</label>
+        <a class="proc-link" href="../procedures/index.html#c2-s3-2" title="Operational procedure">📋</a>
       </div>
       <div class="check-item">
         <input type="checkbox" id="c2-s3-3">
         <label for="c2-s3-3"><span class="item-emoji">🗂️</span>Tried local indexing (e.g. with Ollama) instead of a cloud-only workflow</label>
+        <a class="proc-link" href="../procedures/index.html#c2-s3-3" title="Operational procedure">📋</a>
       </div>
     </div>
 

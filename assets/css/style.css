@@ -117,6 +117,66 @@ a:hover { text-decoration: underline; }
   text-decoration: none;
 }
 
+/* ---------- Nav dropdowns (native <details>/<summary>, no JS) ---------- */
+.nav-dropdown { position: relative; }
+
+.nav-dropdown summary {
+  display: inline-block;
+  padding: 8px 26px 8px 14px;
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-size: .92rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  user-select: none;
+}
+.nav-dropdown summary::-webkit-details-marker { display: none; }
+.nav-dropdown summary::after {
+  content: "▾";
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  font-size: .8em;
+  opacity: .6;
+}
+.nav-dropdown summary:hover,
+.nav-dropdown summary.active {
+  background: rgba(108, 92, 231, 0.12);
+  color: var(--brand);
+}
+.nav-dropdown[open] summary::after { transform: rotate(180deg); }
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 200px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+  z-index: 50;
+}
+.dropdown-menu li a {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--text);
+  font-size: .9rem;
+  font-weight: 500;
+}
+.dropdown-menu li a:hover {
+  background: rgba(108, 92, 231, 0.12);
+  color: var(--brand);
+  text-decoration: none;
+}
+.dropdown-menu li + li { margin-top: 1px; }
+
 .nav-toggle {
   display: none;
   background: none;
@@ -145,6 +205,14 @@ a:hover { text-decoration: underline; }
   }
   .nav-links.open { display: flex; }
   .nav-links a { border-radius: 8px; padding: 12px 14px; }
+  .nav-dropdown summary { display: block; padding: 12px 14px; }
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    padding: 0 0 4px 14px;
+  }
 }
 
 /* ---------- Hero ---------- */
@@ -373,8 +441,9 @@ p.section-sub {
   margin-bottom: 24px;
 }
 
-/* ---------- Glossary ---------- */
-.glossary-search {
+/* ---------- Glossary / Procedures search ---------- */
+.glossary-search,
+.proc-search {
   width: 100%;
   padding: 12px 16px;
   border-radius: 999px;
@@ -384,7 +453,8 @@ p.section-sub {
   font-size: 1rem;
   margin-bottom: 26px;
 }
-.glossary-search:focus { outline: 2px solid var(--brand); }
+.glossary-search:focus,
+.proc-search:focus { outline: 2px solid var(--brand); }
 
 dl.glossary-list dt {
   font-weight: 700;
@@ -408,6 +478,16 @@ dl.glossary-list dd {
   box-shadow: var(--card-shadow);
 }
 .glossary-term.hidden { display: none; }
+.procedure.hidden { display: none; }
+
+.search-count {
+  display: block;
+  text-align: right;
+  font-size: .8rem;
+  color: var(--text-muted);
+  margin: -18px 0 18px;
+  min-height: 1em;
+}
 .glossary-term h3 { margin: 0 0 4px; font-size: 1.02rem; }
 .glossary-term p { margin: 0; color: var(--text-muted); font-size: .92rem; }
 .glossary-term .letter-badge {
@@ -422,6 +502,70 @@ dl.glossary-list dd {
   font-size: .85rem;
   margin-right: 8px;
 }
+
+/* ---------- Procedures ---------- */
+.procedure {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  margin-bottom: 18px;
+  box-shadow: var(--card-shadow);
+  scroll-margin-top: calc(var(--nav-h) + 16px);
+}
+
+.proc-head h3 {
+  margin: 8px 0 14px;
+  font-size: 1.05rem;
+}
+
+dl.proc-body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 4px 16px;
+}
+
+dl.proc-body dt {
+  font-weight: 700;
+  font-size: .85rem;
+  color: var(--text-muted);
+  padding-top: 2px;
+}
+
+dl.proc-body dd {
+  margin: 0 0 6px;
+}
+
+dl.proc-body ul,
+dl.proc-body ol {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+dl.proc-body li {
+  margin-bottom: 3px;
+  font-size: .94rem;
+}
+
+@media (max-width: 640px) {
+  dl.proc-body {
+    grid-template-columns: 1fr;
+  }
+  dl.proc-body dt {
+    margin-top: 8px;
+  }
+}
+
+.proc-link {
+  flex-shrink: 0;
+  align-self: center;
+  font-size: .95rem;
+  opacity: .55;
+  text-decoration: none;
+  margin-left: 4px;
+}
+.proc-link:hover { opacity: 1; text-decoration: none; }
 
 /* ---------- Footer ---------- */
 .site-footer {

@@ -21,8 +21,48 @@
     <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
     <ul class="nav-links">
       <li><a href="../index.html">🏠 Home</a></li>
-      <li><a href="../cohorts/index.html">📁 Cohorts</a></li>
-      <li><a href="index.html" class="active">✅ Self-Assessment</a></li>
+      <li class="nav-dropdown">
+        <details>
+          <summary>📁 Cohorts</summary>
+          <ul class="dropdown-menu">
+            <li><a href="../cohorts/index.html">📚 All Cohorts</a></li>
+            <li><a href="../cohorts/cohort-1.docx">1️⃣ Cohort 1</a></li>
+            <li><a href="../cohorts/cohort-2.docx">2️⃣ Cohort 2</a></li>
+            <li><a href="../cohorts/cohort-3.docx">3️⃣ Cohort 3</a></li>
+            <li><a href="../cohorts/cohort-4.docx">4️⃣ Cohort 4</a></li>
+            <li><a href="../cohorts/cohort-5.docx">5️⃣ Cohort 5</a></li>
+            <li><a href="../cohorts/cohort-6.docx">6️⃣ Cohort 6</a></li>
+          </ul>
+        </details>
+      </li>
+      <li class="nav-dropdown">
+        <details>
+          <summary class="active">✅ Self-Assessment</summary>
+          <ul class="dropdown-menu">
+            <li><a href="../assessments/index.html">✅ All Checklists</a></li>
+            <li><a href="../assessments/cohort-1.html">1️⃣ Cohort 1</a></li>
+            <li><a href="../assessments/cohort-2.html">2️⃣ Cohort 2</a></li>
+            <li><a href="../assessments/cohort-3.html">3️⃣ Cohort 3</a></li>
+            <li><a href="../assessments/cohort-4.html">4️⃣ Cohort 4</a></li>
+            <li><a href="../assessments/cohort-5.html">5️⃣ Cohort 5</a></li>
+            <li><a href="../assessments/cohort-6.html">6️⃣ Cohort 6</a></li>
+          </ul>
+        </details>
+      </li>
+      <li class="nav-dropdown">
+        <details>
+          <summary>📋 Procedures</summary>
+          <ul class="dropdown-menu">
+            <li><a href="../procedures/index.html">📋 All Procedures</a></li>
+            <li><a href="../procedures/index.html#cohort-1">1️⃣ Cohort 1</a></li>
+            <li><a href="../procedures/index.html#cohort-2">2️⃣ Cohort 2</a></li>
+            <li><a href="../procedures/index.html#cohort-3">3️⃣ Cohort 3</a></li>
+            <li><a href="../procedures/index.html#cohort-4">4️⃣ Cohort 4</a></li>
+            <li><a href="../procedures/index.html#cohort-5">5️⃣ Cohort 5</a></li>
+            <li><a href="../procedures/index.html#cohort-6">6️⃣ Cohort 6</a></li>
+          </ul>
+        </details>
+      </li>
       <li><a href="../glossary/index.html">📖 Glossary</a></li>
       <li><a href="https://github.com/rifaterdemsahin/ai-cohort-assignments" target="_blank" rel="noopener">🐙 GitHub</a></li>
     </ul>
@@ -63,14 +103,17 @@
       <div class="check-item">
         <input type="checkbox" id="c4-s1-1">
         <label for="c4-s1-1"><span class="item-emoji">⬇️</span>Installed Node.js and the Claude Code CLI</label>
+        <a class="proc-link" href="../procedures/index.html#c4-s1-1" title="Operational procedure">📋</a>
       </div>
       <div class="check-item">
         <input type="checkbox" id="c4-s1-2">
         <label for="c4-s1-2"><span class="item-emoji">🔑</span>Authenticated the CLI via the browser flow</label>
+        <a class="proc-link" href="../procedures/index.html#c4-s1-2" title="Operational procedure">📋</a>
       </div>
       <div class="check-item">
         <input type="checkbox" id="c4-s1-3">
         <label for="c4-s1-3"><span class="item-emoji">🆚</span>Can explain when to use the CLI vs. the web interface</label>
+        <a class="proc-link" href="../procedures/index.html#c4-s1-3" title="Operational procedure">📋</a>
       </div>
     </div>
 
@@ -80,18 +123,22 @@
       <div class="check-item">
         <input type="checkbox" id="c4-s2-1">
         <label for="c4-s2-1"><span class="item-emoji">📁</span>Used the CLI to create or organize files and folders</label>
+        <a class="proc-link" href="../procedures/index.html#c4-s2-1" title="Operational procedure">📋</a>
       </div>
       <div class="check-item">
         <input type="checkbox" id="c4-s2-2">
         <label for="c4-s2-2"><span class="item-emoji">🧹</span>Understand why clearing context (e.g. a <code>/new</code> command) prevents stale-cache hallucinations</label>
+        <a class="proc-link" href="../procedures/index.html#c4-s2-2" title="Operational procedure">📋</a>
       </div>
       <div class="check-item">
         <input type="checkbox" id="c4-s2-3">
         <label for="c4-s2-3"><span class="item-emoji">☁️</span>Set up a cloud backup (e.g. OneDrive) before letting AI touch your files</label>
+        <a class="proc-link" href="../procedures/index.html#c4-s2-3" title="Operational procedure">📋</a>
       </div>
       <div class="check-item">
         <input type="checkbox" id="c4-s2-4">
         <label for="c4-s2-4"><span class="item-emoji">⚠️</span>Caught and corrected at least one AI hallucination/error yourself</label>
+        <a class="proc-link" href="../procedures/index.html#c4-s2-4" title="Operational procedure">📋</a>
       </div>
     </div>
 
@@ -101,14 +148,17 @@
       <div class="check-item">
         <input type="checkbox" id="c4-s3-1">
         <label for="c4-s3-1"><span class="item-emoji">🏥</span>Applied AI to a real personal task (health admin, finances, or similar)</label>
+        <a class="proc-link" href="../procedures/index.html#c4-s3-1" title="Operational procedure">📋</a>
       </div>
       <div class="check-item">
         <input type="checkbox" id="c4-s3-2">
         <label for="c4-s3-2"><span class="item-emoji">📋</span>Generated a checklist or report with the CLI (e.g. an HTML checklist)</label>
+        <a class="proc-link" href="../procedures/index.html#c4-s3-2" title="Operational procedure">📋</a>
       </div>
       <div class="check-item">
         <input type="checkbox" id="c4-s3-3">
         <label for="c4-s3-3"><span class="item-emoji">🚀</span>Published something as a live GitHub Pages URL</label>
+        <a class="proc-link" href="../procedures/index.html#c4-s3-3" title="Operational procedure">📋</a>
       </div>
     </div>
 
