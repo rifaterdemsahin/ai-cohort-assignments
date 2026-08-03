@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cohort 4 Procedures — AI Cohort Assignments</title>
+<meta name="description" content="Operational procedures for Cohort 4: Claude Code CLI &amp; Personal Automation.">
+<link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a class="brand" href="../index.html">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#6c5ce7"/><path d="M32 15 L54 24 L32 33 L10 24 Z" fill="#fff"/><path d="M20 28.5 V38 c0 3 5.5 6 12 6 s12 -3 12 -6 v-9.5 L32 33 Z" fill="#fff" opacity="0.85"/></svg>
+      AI Cohort Assignments
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">🏠 Home</a></li>
+      <li class="nav-dropdown">
+        <details>
+          <summary>📁 Cohorts</summary>
+          <ul class="dropdown-menu">
+            <li><a href="../cohorts/index.html">📚 All Cohorts</a></li>
+            <li><a href="../cohorts/cohort-1.docx">1️⃣ Cohort 1</a></li>
+            <li><a href="../cohorts/cohort-2.docx">2️⃣ Cohort 2</a></li>
+            <li><a href="../cohorts/cohort-3.docx">3️⃣ Cohort 3</a></li>
+            <li><a href="../cohorts/cohort-4.docx">4️⃣ Cohort 4</a></li>
+            <li><a href="../cohorts/cohort-5.docx">5️⃣ Cohort 5</a></li>
+            <li><a href="../cohorts/cohort-6.docx">6️⃣ Cohort 6</a></li>
+          </ul>
+        </details>
+      </li>
+      <li class="nav-dropdown">
+        <details>
+          <summary>✅ Self-Assessment</summary>
+          <ul class="dropdown-menu">
+            <li><a href="../assessments/index.html">✅ All Checklists</a></li>
+            <li><a href="../assessments/cohort-1.html">1️⃣ Cohort 1</a></li>
+            <li><a href="../assessments/cohort-2.html">2️⃣ Cohort 2</a></li>
+            <li><a href="../assessments/cohort-3.html">3️⃣ Cohort 3</a></li>
+            <li><a href="../assessments/cohort-4.html">4️⃣ Cohort 4</a></li>
+            <li><a href="../assessments/cohort-5.html">5️⃣ Cohort 5</a></li>
+            <li><a href="../assessments/cohort-6.html">6️⃣ Cohort 6</a></li>
+          </ul>
+        </details>
+      </li>
+      <li class="nav-dropdown">
+        <details>
+          <summary class="active">📋 Procedures</summary>
+          <ul class="dropdown-menu">
+            <li><a href="../procedures/index.html">📋 All Procedures</a></li>
+            <li><a href="../procedures/cohort-1.html">1️⃣ Cohort 1</a></li>
+            <li><a href="../procedures/cohort-2.html">2️⃣ Cohort 2</a></li>
+            <li><a href="../procedures/cohort-3.html">3️⃣ Cohort 3</a></li>
+            <li><a href="../procedures/cohort-4.html">4️⃣ Cohort 4</a></li>
+            <li><a href="../procedures/cohort-5.html">5️⃣ Cohort 5</a></li>
+            <li><a href="../procedures/cohort-6.html">6️⃣ Cohort 6</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a href="../glossary/index.html">📖 Glossary</a></li>
+      <li><a href="https://github.com/rifaterdemsahin/ai-cohort-assignments" target="_blank" rel="noopener">🐙 GitHub</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <h1>4️⃣ Cohort 4 Procedures</h1>
+    <p class="lead">19 Jul 2026 · Claude Code CLI &amp; Personal Automation — 10 procedures, each with an Objective, Key Results, Prerequisites, a Steps flow diagram, and References.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="note-box">
+      📄 Matches the <a href="../assessments/cohort-4.html">Cohort 4 self-assessment checklist</a> item-for-item.
+    </div>
+
+    <input class="proc-search" type="search" placeholder="🔎 Search this cohort's procedures…" aria-label="Search operational procedures">
+    <span class="proc-search-count search-count"></span>
+
+    <div class="procedure" id="c4-s1-1">
+      <div class="proc-head">
+        <span class="tag">COHORT 4 · 💻 CLI Setup</span>
+        <h3>⬇️ Installed Node.js and the Claude Code CLI</h3>
+      </div>
+      <dl class="proc-body">
+        <dt>🎯 Objective</dt>
+        <dd>Get the Claude Code CLI installed and runnable on your machine.</dd>
+        <dt>✅ Key Results</dt>
+        <dd>
+      <ul>
+        <li>`node -v` returns a version number</li>
+        <li>Claude Code CLI installed and its help command runs</li>
+      </ul>
+        </dd>
+        <dt>📋 Prerequisites</dt>
+        <dd>
+      <ul>
+        <li>Administrator/terminal access on your computer</li>
+      </ul>
+        </dd>
+        <dt>🪜 Steps</dt>
+        <dd>
+          <svg class="steps-flow" viewBox="0 0 322 44" role="img" aria-label="4-step flow diagram"><line x1="35" y1="22.0" x2="287" y2="22.0" stroke="#6c5ce7" stroke-width="2" stroke-dasharray="4 5"/><circle cx="35" cy="22.0" r="15" fill="#6c5ce7"/><text x="35" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">1</text><circle cx="119" cy="22.0" r="15" fill="#6c5ce7"/><text x="119" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><circle cx="203" cy="22.0" r="15" fill="#6c5ce7"/><text x="203" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text><circle cx="287" cy="22.0" r="15" fill="#6c5ce7"/><text x="287" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">4</text></svg>
+      <ol>
+        <li>Install Node.js from nodejs.org (or via Homebrew/winget)</li>
+        <li>Open a terminal (PowerShell as admin on Windows, Terminal on Mac)</li>
+        <li>Install the Claude Code CLI following its official install command</li>
+        <li>Run its version/help command to confirm installation</li>
+      </ol>
+        </dd>
+        <dt>🔗 References</dt>
+        <dd>
+      <ul>
+        <li><a href="https://nodejs.org" target="_blank" rel="noopener">Node.js</a></li>
+        <li><a href="https://docs.claude.com/en/docs/claude-code" target="_blank" rel="noopener">Claude Code docs</a></li>
+        <li><a href="../cohorts/cohort-4.docx" target="_blank" rel="noopener">Cohort 4 session notes</a></li>
+      </ul>
+        </dd>
+      </dl>
+    </div>
+    <div class="procedure" id="c4-s1-2">
+      <div class="proc-head">
+        <span class="tag">COHORT 4 · 💻 CLI Setup</span>
+        <h3>🔑 Authenticated the CLI via the browser flow</h3>
+      </div>
+      <dl class="proc-body">
+        <dt>🎯 Objective</dt>
+        <dd>Complete first-time authentication so the CLI can make requests on your behalf.</dd>
+        <dt>✅ Key Results</dt>
+        <dd>
+      <ul>
+        <li>Browser login flow completed</li>
+        <li>CLI confirms an authenticated session</li>
+      </ul>
+        </dd>
+        <dt>📋 Prerequisites</dt>
+        <dd>
+      <ul>
+        <li>CLI installed (previous step)</li>
+        <li>An Anthropic/Claude account</li>
+      </ul>
+        </dd>
+        <dt>🪜 Steps</dt>
+        <dd>
+          <svg class="steps-flow" viewBox="0 0 322 44" role="img" aria-label="4-step flow diagram"><line x1="35" y1="22.0" x2="287" y2="22.0" stroke="#6c5ce7" stroke-width="2" stroke-dasharray="4 5"/><circle cx="35" cy="22.0" r="15" fill="#6c5ce7"/><text x="35" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">1</text><circle cx="119" cy="22.0" r="15" fill="#6c5ce7"/><text x="119" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><circle cx="203" cy="22.0" r="15" fill="#6c5ce7"/><text x="203" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text><circle cx="287" cy="22.0" r="15" fill="#6c5ce7"/><text x="287" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">4</text></svg>
+      <ol>
+        <li>Run the CLI's login command</li>
+        <li>Complete the sign-in in the browser window it opens</li>
+        <li>Paste back any authentication code if prompted</li>
+        <li>Confirm the terminal shows you as logged in</li>
+      </ol>
+        </dd>
+        <dt>🔗 References</dt>
+        <dd>
+      <ul>
+        <li><a href="https://docs.claude.com/en/docs/claude-code" target="_blank" rel="noopener">Claude Code docs</a></li>
+      </ul>
+        </dd>
+      </dl>
+    </div>
+    <div class="procedure" id="c4-s1-3">
+      <div class="proc-head">
+        <span class="tag">COHORT 4 · 💻 CLI Setup</span>
+        <h3>🆚 Can explain when to use the CLI vs. the web interface</h3>
+      </div>
+      <dl class="proc-body">
+        <dt>🎯 Objective</dt>
+        <dd>Know which interface fits which kind of task.</dd>
+        <dt>✅ Key Results</dt>
+        <dd>
+      <ul>
+        <li>Can state one scenario better suited to the web app</li>
+        <li>Can state one scenario better suited to the CLI</li>
+      </ul>
+        </dd>
+        <dt>📋 Prerequisites</dt>
+        <dd>
+      <ul>
+        <li>CLI installed and authenticated (previous steps)</li>
+      </ul>
+        </dd>
+        <dt>🪜 Steps</dt>
+        <dd>
+          <svg class="steps-flow" viewBox="0 0 238 44" role="img" aria-label="3-step flow diagram"><line x1="35" y1="22.0" x2="203" y2="22.0" stroke="#6c5ce7" stroke-width="2" stroke-dasharray="4 5"/><circle cx="35" cy="22.0" r="15" fill="#6c5ce7"/><text x="35" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">1</text><circle cx="119" cy="22.0" r="15" fill="#6c5ce7"/><text x="119" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><circle cx="203" cy="22.0" r="15" fill="#6c5ce7"/><text x="203" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text></svg>
+      <ol>
+        <li>Re-read the CLI-vs-web comparison in Cohort 4</li>
+        <li>Try a simple one-off question in the web interface</li>
+        <li>Try a multi-file task in the CLI and notice the difference in capability</li>
+      </ol>
+        </dd>
+        <dt>🔗 References</dt>
+        <dd>
+      <ul>
+        <li><a href="../cohorts/cohort-4.docx" target="_blank" rel="noopener">Cohort 4 session notes</a></li>
+      </ul>
+        </dd>
+      </dl>
+    </div>
+    <div class="procedure" id="c4-s2-1">
+      <div class="proc-head">
+        <span class="tag">COHORT 4 · 🗂️ File &amp; Context Management</span>
+        <h3>📁 Used the CLI to create or organize files and folders</h3>
+      </div>
+      <dl class="proc-body">
+        <dt>🎯 Objective</dt>
+        <dd>Use the CLI to perform a real file/folder organization task.</dd>
+        <dt>✅ Key Results</dt>
+        <dd>
+      <ul>
+        <li>At least one folder created or reorganized via the CLI</li>
+        <li>Confirmed the result in your file explorer/Finder</li>
+      </ul>
+        </dd>
+        <dt>📋 Prerequisites</dt>
+        <dd>
+      <ul>
+        <li>CLI installed and authenticated</li>
+      </ul>
+        </dd>
+        <dt>🪜 Steps</dt>
+        <dd>
+          <svg class="steps-flow" viewBox="0 0 238 44" role="img" aria-label="3-step flow diagram"><line x1="35" y1="22.0" x2="203" y2="22.0" stroke="#6c5ce7" stroke-width="2" stroke-dasharray="4 5"/><circle cx="35" cy="22.0" r="15" fill="#6c5ce7"/><text x="35" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">1</text><circle cx="119" cy="22.0" r="15" fill="#6c5ce7"/><text x="119" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><circle cx="203" cy="22.0" r="15" fill="#6c5ce7"/><text x="203" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text></svg>
+      <ol>
+        <li>Pick a small folder that needs tidying</li>
+        <li>Ask the CLI to organize or rename files within it</li>
+        <li>Review the result before accepting any destructive change</li>
+      </ol>
+        </dd>
+        <dt>🔗 References</dt>
+        <dd>
+      <ul>
+        <li><a href="../cohorts/cohort-4.docx" target="_blank" rel="noopener">Cohort 4 session notes</a></li>
+      </ul>
+        </dd>
+      </dl>
+    </div>
+    <div class="procedure" id="c4-s2-2">
+      <div class="proc-head">
+        <span class="tag">COHORT 4 · 🗂️ File &amp; Context Management</span>
+        <h3>🧹 Understand why clearing context (e.g. a <code>/new</code> command) prevents stale-cache hallucinations</h3>
+      </div>
+      <dl class="proc-body">
+        <dt>🎯 Objective</dt>
+        <dd>Understand why starting a fresh session avoids errors caused by stale context.</dd>
+        <dt>✅ Key Results</dt>
+        <dd>
+      <ul>
+        <li>Can explain in one sentence why old context can cause incorrect answers</li>
+        <li>Used a "new session" or context-clear command at least once</li>
+      </ul>
+        </dd>
+        <dt>📋 Prerequisites</dt>
+        <dd>
+      <ul>
+        <li>CLI installed</li>
+      </ul>
+        </dd>
+        <dt>🪜 Steps</dt>
+        <dd>
+          <svg class="steps-flow" viewBox="0 0 238 44" role="img" aria-label="3-step flow diagram"><line x1="35" y1="22.0" x2="203" y2="22.0" stroke="#6c5ce7" stroke-width="2" stroke-dasharray="4 5"/><circle cx="35" cy="22.0" r="15" fill="#6c5ce7"/><text x="35" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">1</text><circle cx="119" cy="22.0" r="15" fill="#6c5ce7"/><text x="119" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><circle cx="203" cy="22.0" r="15" fill="#6c5ce7"/><text x="203" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text></svg>
+      <ol>
+        <li>Re-read the context-clearing explanation in Cohort 4</li>
+        <li>Start a new/cleared session before beginning an unrelated task</li>
+        <li>Notice whether responses feel more focused afterward</li>
+      </ol>
+        </dd>
+        <dt>🔗 References</dt>
+        <dd>
+      <ul>
+        <li><a href="../cohorts/cohort-4.docx" target="_blank" rel="noopener">Cohort 4 session notes</a></li>
+        <li><a href="../glossary/index.html?term=context-window#term-context-window" target="_blank" rel="noopener">Glossary: Context Window</a></li>
+      </ul>
+        </dd>
+      </dl>
+    </div>
+    <div class="procedure" id="c4-s2-3">
+      <div class="proc-head">
+        <span class="tag">COHORT 4 · 🗂️ File &amp; Context Management</span>
+        <h3>☁️ Set up a cloud backup (e.g. OneDrive) before letting AI touch your files</h3>
+      </div>
+      <dl class="proc-body">
+        <dt>🎯 Objective</dt>
+        <dd>Have a safety net in place before giving an AI agent write access to real files.</dd>
+        <dt>✅ Key Results</dt>
+        <dd>
+      <ul>
+        <li>A cloud-synced backup folder (OneDrive, Google Drive, etc.) is active</li>
+        <li>Version history confirmed accessible for at least one file</li>
+      </ul>
+        </dd>
+        <dt>📋 Prerequisites</dt>
+        <dd>
+      <ul>
+        <li>A cloud storage account</li>
+      </ul>
+        </dd>
+        <dt>🪜 Steps</dt>
+        <dd>
+          <svg class="steps-flow" viewBox="0 0 238 44" role="img" aria-label="3-step flow diagram"><line x1="35" y1="22.0" x2="203" y2="22.0" stroke="#6c5ce7" stroke-width="2" stroke-dasharray="4 5"/><circle cx="35" cy="22.0" r="15" fill="#6c5ce7"/><text x="35" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">1</text><circle cx="119" cy="22.0" r="15" fill="#6c5ce7"/><text x="119" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><circle cx="203" cy="22.0" r="15" fill="#6c5ce7"/><text x="203" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text></svg>
+      <ol>
+        <li>Set up or confirm OneDrive/Google Drive sync on your working folder</li>
+        <li>Check that version history is enabled for that location</li>
+        <li>Only then let the CLI make bulk changes in that folder</li>
+      </ol>
+        </dd>
+        <dt>🔗 References</dt>
+        <dd>
+      <ul>
+        <li><a href="../cohorts/cohort-4.docx" target="_blank" rel="noopener">Cohort 4 session notes</a></li>
+      </ul>
+        </dd>
+      </dl>
+    </div>
+    <div class="procedure" id="c4-s2-4">
+      <div class="proc-head">
+        <span class="tag">COHORT 4 · 🗂️ File &amp; Context Management</span>
+        <h3>⚠️ Caught and corrected at least one AI hallucination/error yourself</h3>
+      </div>
+      <dl class="proc-body">
+        <dt>🎯 Objective</dt>
+        <dd>Practice the human-review habit of catching AI mistakes before they cause harm.</dd>
+        <dt>✅ Key Results</dt>
+        <dd>
+      <ul>
+        <li>At least one factual or file error from an AI response identified</li>
+        <li>The error corrected and the fix verified</li>
+      </ul>
+        </dd>
+        <dt>📋 Prerequisites</dt>
+        <dd>
+      <ul>
+        <li>Some hands-on CLI or chat usage</li>
+      </ul>
+        </dd>
+        <dt>🪜 Steps</dt>
+        <dd>
+          <svg class="steps-flow" viewBox="0 0 238 44" role="img" aria-label="3-step flow diagram"><line x1="35" y1="22.0" x2="203" y2="22.0" stroke="#6c5ce7" stroke-width="2" stroke-dasharray="4 5"/><circle cx="35" cy="22.0" r="15" fill="#6c5ce7"/><text x="35" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">1</text><circle cx="119" cy="22.0" r="15" fill="#6c5ce7"/><text x="119" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><circle cx="203" cy="22.0" r="15" fill="#6c5ce7"/><text x="203" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text></svg>
+      <ol>
+        <li>Review the output of your last few AI-assisted tasks closely</li>
+        <li>Find one incorrect detail (a wrong name, wrong file, wrong number)</li>
+        <li>Correct it manually and note what caused the mistake</li>
+      </ol>
+        </dd>
+        <dt>🔗 References</dt>
+        <dd>
+      <ul>
+        <li><a href="../cohorts/cohort-4.docx" target="_blank" rel="noopener">Cohort 4 session notes</a></li>
+      </ul>
+        </dd>
+      </dl>
+    </div>
+    <div class="procedure" id="c4-s3-1">
+      <div class="proc-head">
+        <span class="tag">COHORT 4 · 🧑‍💻 Personal Automation Project</span>
+        <h3>🏥 Applied AI to a real personal task (health admin, finances, or similar)</h3>
+      </div>
+      <dl class="proc-body">
+        <dt>🎯 Objective</dt>
+        <dd>Use AI for a genuine personal task, not just a training exercise.</dd>
+        <dt>✅ Key Results</dt>
+        <dd>
+      <ul>
+        <li>One real personal task completed with AI assistance</li>
+        <li>Outcome verified as correct by you</li>
+      </ul>
+        </dd>
+        <dt>📋 Prerequisites</dt>
+        <dd>
+      <ul>
+        <li>CLI or chat tool set up</li>
+      </ul>
+        </dd>
+        <dt>🪜 Steps</dt>
+        <dd>
+          <svg class="steps-flow" viewBox="0 0 238 44" role="img" aria-label="3-step flow diagram"><line x1="35" y1="22.0" x2="203" y2="22.0" stroke="#6c5ce7" stroke-width="2" stroke-dasharray="4 5"/><circle cx="35" cy="22.0" r="15" fill="#6c5ce7"/><text x="35" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">1</text><circle cx="119" cy="22.0" r="15" fill="#6c5ce7"/><text x="119" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><circle cx="203" cy="22.0" r="15" fill="#6c5ce7"/><text x="203" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text></svg>
+      <ol>
+        <li>Pick a low-risk personal task (e.g. drafting a message, organizing a folder, summarizing a document)</li>
+        <li>Ask the AI to help, providing clear context and details</li>
+        <li>Review the result carefully before using it</li>
+      </ol>
+        </dd>
+        <dt>🔗 References</dt>
+        <dd>
+      <ul>
+        <li><a href="../cohorts/cohort-4.docx" target="_blank" rel="noopener">Cohort 4 session notes</a></li>
+      </ul>
+        </dd>
+      </dl>
+    </div>
+    <div class="procedure" id="c4-s3-2">
+      <div class="proc-head">
+        <span class="tag">COHORT 4 · 🧑‍💻 Personal Automation Project</span>
+        <h3>📋 Generated a checklist or report with the CLI (e.g. an HTML checklist)</h3>
+      </div>
+      <dl class="proc-body">
+        <dt>🎯 Objective</dt>
+        <dd>Produce one concrete artifact (a checklist, report, or small page) using the CLI.</dd>
+        <dt>✅ Key Results</dt>
+        <dd>
+      <ul>
+        <li>A checklist or report file generated</li>
+        <li>File opens correctly and content matches your input details</li>
+      </ul>
+        </dd>
+        <dt>📋 Prerequisites</dt>
+        <dd>
+      <ul>
+        <li>CLI installed and authenticated</li>
+      </ul>
+        </dd>
+        <dt>🪜 Steps</dt>
+        <dd>
+          <svg class="steps-flow" viewBox="0 0 238 44" role="img" aria-label="3-step flow diagram"><line x1="35" y1="22.0" x2="203" y2="22.0" stroke="#6c5ce7" stroke-width="2" stroke-dasharray="4 5"/><circle cx="35" cy="22.0" r="15" fill="#6c5ce7"/><text x="35" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">1</text><circle cx="119" cy="22.0" r="15" fill="#6c5ce7"/><text x="119" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><circle cx="203" cy="22.0" r="15" fill="#6c5ce7"/><text x="203" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text></svg>
+      <ol>
+        <li>Describe the checklist/report you want, including specific details (dates, names, context)</li>
+        <li>Ask the CLI to generate it as an HTML or text file</li>
+        <li>Open the file to confirm it's accurate and complete</li>
+      </ol>
+        </dd>
+        <dt>🔗 References</dt>
+        <dd>
+      <ul>
+        <li><a href="../cohorts/cohort-4.docx" target="_blank" rel="noopener">Cohort 4 session notes</a></li>
+      </ul>
+        </dd>
+      </dl>
+    </div>
+    <div class="procedure" id="c4-s3-3">
+      <div class="proc-head">
+        <span class="tag">COHORT 4 · 🧑‍💻 Personal Automation Project</span>
+        <h3>🚀 Published something as a live GitHub Pages URL</h3>
+      </div>
+      <dl class="proc-body">
+        <dt>🎯 Objective</dt>
+        <dd>Get one page live on the public internet via GitHub Pages.</dd>
+        <dt>✅ Key Results</dt>
+        <dd>
+      <ul>
+        <li>A repository with Pages enabled</li>
+        <li>A working public URL you can open in a browser</li>
+      </ul>
+        </dd>
+        <dt>📋 Prerequisites</dt>
+        <dd>
+      <ul>
+        <li>A GitHub account and repository</li>
+      </ul>
+        </dd>
+        <dt>🪜 Steps</dt>
+        <dd>
+          <svg class="steps-flow" viewBox="0 0 238 44" role="img" aria-label="3-step flow diagram"><line x1="35" y1="22.0" x2="203" y2="22.0" stroke="#6c5ce7" stroke-width="2" stroke-dasharray="4 5"/><circle cx="35" cy="22.0" r="15" fill="#6c5ce7"/><text x="35" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">1</text><circle cx="119" cy="22.0" r="15" fill="#6c5ce7"/><text x="119" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">2</text><circle cx="203" cy="22.0" r="15" fill="#6c5ce7"/><text x="203" y="27.0" font-size="13" font-weight="700" text-anchor="middle" fill="#fff">3</text></svg>
+      <ol>
+        <li>Push an HTML file to a GitHub repository</li>
+        <li>Enable GitHub Pages in that repo's Settings</li>
+        <li>Open the resulting github.io URL to confirm it's live</li>
+      </ol>
+        </dd>
+        <dt>🔗 References</dt>
+        <dd>
+      <ul>
+        <li><a href="https://docs.github.com/pages" target="_blank" rel="noopener">GitHub Pages docs</a></li>
+        <li><a href="../cohorts/cohort-4.docx" target="_blank" rel="noopener">Cohort 4 session notes</a></li>
+      </ul>
+        </dd>
+      </dl>
+    </div>
+
+    <div class="assess-actions">
+      <a class="btn btn-ghost" href="index.html">← All cohorts</a>
+      <a class="btn btn-ghost" href="cohort-3.html">← Cohort 3</a><a class="btn btn-ghost" href="cohort-5.html">Cohort 5 →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 AI Cohort Assignments</span>
+    <ul class="footer-links">
+      <li><a href="../index.html">🏠 Home</a></li>
+      <li><a href="../cohorts/index.html">📁 Cohorts</a></li>
+      <li><a href="../assessments/index.html">✅ Self-Assessment</a></li>
+      <li><a href="../glossary/index.html">📖 Glossary</a></li>
+      <li><a href="https://github.com/rifaterdemsahin/ai-cohort-assignments" target="_blank" rel="noopener">🐙 GitHub</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

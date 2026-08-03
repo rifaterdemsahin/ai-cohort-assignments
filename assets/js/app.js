@@ -96,10 +96,25 @@
     });
   }
 
+  /* ---------- Deep-link via query parameter: ?item=c6-s3-6 or ?term=agent ---------- */
+  // Scrolls to and briefly highlights the matching element. Kept alongside the
+  // matching #hash (which handles the no-JS/no-flash case) for robustness.
+  function initDeepLink() {
+    var params = new URLSearchParams(window.location.search);
+    var targetId = params.get("item") || params.get("term");
+    if (!targetId) return;
+    var el = document.getElementById(targetId);
+    if (!el) return;
+    el.scrollIntoView({ behavior: "auto", block: "center" });
+    el.classList.add("deep-link-highlight");
+    setTimeout(function () { el.classList.remove("deep-link-highlight"); }, 2500);
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initNav();
     initAssessment();
     initLiveSearch(".glossary-search", ".glossary-term");
     initLiveSearch(".proc-search", ".procedure");
+    initDeepLink();
   });
 })();

@@ -476,9 +476,17 @@ dl.glossary-list dd {
   padding: 16px 18px;
   margin-bottom: 12px;
   box-shadow: var(--card-shadow);
+  scroll-margin-top: calc(var(--nav-h) + 16px);
 }
 .glossary-term.hidden { display: none; }
 .procedure.hidden { display: none; }
+
+/* ---------- Deep-link highlight (?item=/?term= query params) ---------- */
+@keyframes dl-flash {
+  0%, 45% { box-shadow: 0 0 0 3px var(--brand); }
+  100% { box-shadow: var(--card-shadow); }
+}
+.deep-link-highlight { animation: dl-flash 2.4s ease-out; }
 
 .search-count {
   display: block;
@@ -546,6 +554,14 @@ dl.proc-body ol {
 dl.proc-body li {
   margin-bottom: 3px;
   font-size: .94rem;
+}
+
+.steps-flow {
+  display: block;
+  height: 40px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 0 8px;
 }
 
 @media (max-width: 640px) {
