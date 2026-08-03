@@ -750,3 +750,48 @@ code {
     margin-right: auto;
   }
 }
+
+/* ---------- Access-request modal ---------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+}
+.modal-overlay[hidden] { display: none; }
+
+.modal-box {
+  position: relative;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 26px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+.modal-box h3 { margin-top: 0; }
+.modal-box .btn { margin: 10px 0; }
+.modal-alt {
+  font-size: .85rem;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  line-height: 1;
+  padding: 6px;
+}
+.modal-close:hover { color: var(--brand); }

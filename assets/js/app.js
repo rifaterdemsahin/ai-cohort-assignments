@@ -110,11 +110,39 @@
     setTimeout(function () { el.classList.remove("deep-link-highlight"); }, 2500);
   }
 
+  /* ---------- Generic modal: [data-modal-open="id"] shows #id, [data-modal-close] hides it ---------- */
+  function initModals() {
+    var openers = Array.prototype.slice.call(document.querySelectorAll("[data-modal-open]"));
+    if (openers.length === 0) return;
+
+    function closeModal(modal) {
+      modal.hidden = true;
+    }
+
+    openers.forEach(function (opener) {
+      var modal = document.getElementById(opener.getAttribute("data-modal-open"));
+      if (!modal) return;
+      opener.addEventListener("click", function () {
+        modal.hidden = false;
+      });
+      modal.querySelectorAll("[data-modal-close]").forEach(function (closer) {
+        closer.addEventListener("click", function () { closeModal(modal); });
+      });
+      modal.addEventListener("click", function (e) {
+        if (e.target === modal) closeModal(modal);
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && !modal.hidden) closeModal(modal);
+      });
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initNav();
     initAssessment();
     initLiveSearch(".glossary-search", ".glossary-term");
     initLiveSearch(".proc-search", ".procedure");
     initDeepLink();
+    initModals();
   });
 })();
